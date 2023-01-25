@@ -1,10 +1,16 @@
 .App {
-  text-align: center; 
+  margin: 10px;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .container{
   max-width: 100%;
-  margin: 30px 60px;
+ 
   padding: 15px;
-  background-color: #b9d79d;
+  background-color: #b8d4f9;
   border-radius: 15px;
+  text-align: center; 
+
   }
   .App-header {
   
@@ -19,6 +25,9 @@
 }
 
 
-
+footer{
+  font-size: 14px;
+ 
+}
 
 
