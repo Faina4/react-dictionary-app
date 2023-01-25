@@ -1,18 +1,24 @@
 .App {
-  text-align: center;
+  text-align: center; 
+  max-width: 100%;
+  margin: 30px 60px;
+  padding: 15px;
+  background-color: #b9d79d;
+  border-radius: 15px;
+  }
+  .App-header {
+  
+    margin: 30px 0;
+    color: black
+  }
+  
+.App-logo{
+ display: block;
+ max-width: 200px;
+ margin: 0 auto;
 }
 
 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 
