@@ -1,5 +1,6 @@
 import SheCodesLogo from './SheCodesLogo.png';
 import './App.css';
+import Dictionary from'./Dictionary';
 
  export default function App() {
   return (
@@ -11,10 +12,10 @@ import './App.css';
 
   </span>
       </header>
-   
+   <Dictionary />
     </div>
     <footer className='test-center '>
-        Coded by
+      <small>  Coded by</small>
       </footer>
     </div>
   );

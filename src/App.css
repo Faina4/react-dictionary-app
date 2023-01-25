@@ -9,7 +9,7 @@
   padding: 15px;
   background-color: #b8d4f9;
   border-radius: 15px;
-  text-align: center; 
+
 
   }
   .App-header {
@@ -24,10 +24,9 @@
  margin: 0 auto;
 }
 
-
 footer{
-  font-size: 14px;
- 
+  margin: 0 auto;
+  padding: 5px 12px;
 }
 
 
