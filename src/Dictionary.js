@@ -6,16 +6,17 @@ let[keyword, setKeyword]=useState("");
 
 function search(event){
 event.preventDefault();
-alert("Searching")
+alert(`Searching for ${keyword}`)
 }
 
-function handleKeywordChange(){
-    
+function handleKeywordChange(event){
+//console.log(event.target.value);
+setKeyword(event.target.value)
 }
     return (
         <div className="Dictionary">
-            <form onSubmit={search}>
-            <input type="search" onChange={handleKeywordChange}/>
+            <form onSubmit={search} className="SearchForm">
+            <input type="search" onChange={handleKeywordChange} className="SearchInput" />
   
             </form>
         </div>
