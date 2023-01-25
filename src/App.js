@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <span>     
+        <span>   
       < img src=  {SheCodesLogo} className="App-logo img-fluid" alt="logo" /> 
   <a href='#' className='btn btn-primary shadow'  >Hello</a>
   </span>
