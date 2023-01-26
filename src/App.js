@@ -7,10 +7,10 @@ import Dictionary from'./Dictionary';
     <div className="App">
     <div className="container">
       <header className="App-header">
-        <span>   
+     
       < img src=  {SheCodesLogo} className="App-logo img-fluid" alt="logo" /> 
 
-  </span>
+
       </header>
    <Dictionary />
     </div>

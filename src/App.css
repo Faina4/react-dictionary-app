@@ -13,15 +13,17 @@
 
   }
   .App-header {
-  
     margin: 30px 0;
-    color: black
+    color: black;
+
   }
   
 .App-logo{
  display: block;
  max-width: 200px;
- margin: 0 auto;
+ margin: 5px;
+ padding: 5px;
+ align-content: flex-start;
 }
 
 footer{
