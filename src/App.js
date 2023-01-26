@@ -13,8 +13,9 @@ import Dictionary from'./Dictionary';
 
       </header>
    <Dictionary />
+
     </div>
-    <footer className='test-center '>
+   <footer className='test-center '>
       <small>  Coded by</small>
       </footer>
     </div>
