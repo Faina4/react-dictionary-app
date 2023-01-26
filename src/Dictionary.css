@@ -1,10 +1,13 @@
 .Dictionary{
      display: block;
+     margin: 0 auto;
+     padding: 0 15px;
 }
 .SearchForm{
     line-height: 35px;
-    margin: 5px;
-    padding: 10px 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ 
 }
 .SearchInput{
     border-radius: 5px;

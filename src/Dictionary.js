@@ -1,15 +1,19 @@
 import React, {useState} from "react";
 import "./Dictionary.css"
 import axios from "axios";
+import SearchResults from "./SearchResults"
 
 //https://dictionaryapi.dev/
+//<SearchResults results={SearchResults} /> ===
+//===<Component-Name Property-Name={property-value}
 
 export default function Dictionary(){
 let[keyword, setKeyword]=useState("");
+let [searchResults, setSearchResults]=useState(null)
 
 
 function handleResponse(response){
-//console.log(response.data[0])
+setSearchResults(response.data[0]);
 console.log(response.data[0].meanings[0].definitions[0].definition)
 
 }
@@ -30,8 +34,10 @@ setKeyword(event.target.value)
         <div className="Dictionary">
             <form onSubmit={search} className="SearchForm">
             <input type="search" onChange={handleKeywordChange} className="SearchInput" />
-  
-            </form>
+              </form>
+              <SearchResults results={searchResults} />
+
+            
         </div>
     )
 }
