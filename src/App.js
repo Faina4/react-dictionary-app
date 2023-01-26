@@ -4,20 +4,21 @@ import Dictionary from'./Dictionary';
 
  export default function App() {
   return (
-    <div className="App">
+          <div className="App">
     <div className="container">
-      <header className="App-header">
-     
+<div className="dictionary-app">
+      <header className="App-header">   
       < img src=  {SheCodesLogo} className="App-logo img-fluid" alt="logo" /> 
-
-
       </header>
    <Dictionary />
 
     </div>
-   <footer className='test-center '>
+
+         <footer >
       <small>  Coded by</small>
       </footer>
+        </div>
+ 
     </div>
   );
 }
