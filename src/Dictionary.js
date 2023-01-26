@@ -9,7 +9,8 @@ let[keyword, setKeyword]=useState("");
 
 
 function handleResponse(response){
-console.log(response.data[0])
+//console.log(response.data[0])
+console.log(response.data[0].meanings[0].definitions)
 
 }
 
