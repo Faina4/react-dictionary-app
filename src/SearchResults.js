@@ -1,7 +1,8 @@
 import React from "react";
+import Meaning from "./Meaning"
 
 export default function SearchResults(props){
-    console.log(props.results)
+   // console.log(props.results)
     if(props.results){
          return  <div className="SearchResults">
             <h2>
@@ -9,7 +10,11 @@ export default function SearchResults(props){
             </h2>
             <p>
                   {props.results.meanings.map(function(meaning,index){
-                return(meaning.definitions[0].definition)
+                return(
+                    <div key={index}>
+<Meaning meaning={meaning} />
+                    </div>
+                )
             }
             )}
             </p>
@@ -18,5 +23,5 @@ export default function SearchResults(props){
         }else{
         return null;
     }
-  
+   
 }
