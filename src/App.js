@@ -16,7 +16,7 @@ import Dictionary from'./Dictionary';
     </div>
 
          <footer >
-      <small>  Coded by <a href="https://github.com/Faina4/react-dictionary-app" rel="noreferrer " target="_blank" > FaIna </a> 
+      <small>  Coded by FaIna and open-sourced on <a href="https://github.com/Faina4/react-dictionary-app" rel="noreferrer " target="_blank" >GitHub </a> 
       and hosted on <a href="https://sweet-dragon-0e1c62.netlify.app" rel="noreferrer " target="_blank" >Netlify </a> </small>
       </footer>
         </div>
