@@ -3,11 +3,14 @@ import Meaning from "./Meaning"
 
 export default function SearchResults(props){
 
-   // console.log(props.results)
+   console.log(props.results)
     if(props.results){
          return  <div className="SearchResults">
             <h2>
-                {props.results.word}
+              <string>{props.results.word}  {""}
+           <small className="fs-6">{props.results.phonetic} 
+            </small>   
+              </string>  
             </h2>
             <p>
                   {props.results.meanings.map(function(meaning,index){
