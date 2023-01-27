@@ -23,4 +23,4 @@ export default function SearchResults(props){
         }else{
         return null;
     }
-   
+}
