@@ -14,17 +14,17 @@ let [searchResults, setSearchResults]=useState(null)
 
 function handleResponse(response){
 setSearchResults(response.data[0]);
-console.log(response.data[0].meanings[0].definitions[0].definition)
+//console.log(response.data[0].meanings[0].definitions[0].definition)
 
 }
 
 function search(event){
 event.preventDefault();
-
-}
 let apiUrl =`https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`
 axios.get(apiUrl).then(handleResponse);
-console.log(apiUrl)
+//console.log(apiUrl)
+}
+
 
 function handleKeywordChange(event){
 //console.log(event.target.value);
