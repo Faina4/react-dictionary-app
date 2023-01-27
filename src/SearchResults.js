@@ -2,6 +2,7 @@ import React from "react";
 import Meaning from "./Meaning"
 
 export default function SearchResults(props){
+
    // console.log(props.results)
     if(props.results){
          return  <div className="SearchResults">
@@ -23,4 +24,3 @@ export default function SearchResults(props){
         return null;
     }
    
-}
