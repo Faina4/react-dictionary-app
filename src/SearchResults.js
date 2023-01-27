@@ -14,9 +14,8 @@ export default function SearchResults(props){
                     <div key={index}>
 <Meaning meaning={meaning} />
                     </div>
-                )
-            }
-            )}
+         )
+            })}
             </p>
           
              </div>
