@@ -35,7 +35,7 @@ setKeyword(event.target.value)
             <div className="Dictionary">
                 <section>
                   <form onSubmit={search} className="SearchForm col-6 d-inline-flex align-middle  ">
-            <input type="search" placeholder="Search for a word"  onChange={handleKeywordChange} className="SearchInput form-control search-input  border-2  "  />
+            <input type="search" placeholder="Search for a word"  onChange={handleKeywordChange} className="SearchInput form-control search-input  border-3  "  />
               </form>     
                 </section>
          
