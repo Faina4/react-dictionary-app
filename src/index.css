@@ -1,11 +1,13 @@
 :root{
-  --background-color:#F4FFE8;
-  --section-background-color:  #E5FFEC;
-  --section-background-color-test:  rgb(241, 169, 169);
+  --background-color:#ebf9ca;
+  --section-background-color: #bff9cc;
+  --section-background-color-test:  #d9fad6;
   --font-color: black;
-  --box-shadow: 0 5px 10px rgba(0,0,0,.7);
-  --box-shadow-light: 0 5px 10px #23515b;
+  --bs-border-color: rgba(114, 177, 216, 0.4 );
+  --box-shadow:  10px 5px 5px  #38c02c;
+  --box-shadow-light: 0 5px 10px #6d806b;
   --text-shadow: 1px 1px 2px #2a2020;
+  
   
   }
 
@@ -19,6 +21,7 @@ body {
 }
 section{
   background-color: var(--section-background-color);
+  box-shadow: var( --box-shadow-light);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
