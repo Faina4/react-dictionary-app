@@ -1,8 +1,8 @@
 .Dictionary{
      display: block;
      margin: 0 auto;
-     padding: 0 15px;
-     background-color: var(--section-background-color);
+
+    
 }
 .SearchForm{
     line-height: 35px;
@@ -13,9 +13,9 @@
 .SearchInput{
     border-radius: 5px;
 }
-section{
- 
-    margin: 10px 5px;
-    padding: 15px;
+.Dictionary section{
+    margin: 12px 0;
+    padding: 25px 45px 5px;
     border-radius: 10px;
+    background-color: var(--section-background-color-test);
 }

@@ -1,7 +1,7 @@
 :root{
   --background-color:#F4FFE8;
   --section-background-color:  #E5FFEC;
-  --section-background-color-test:  red;
+  --section-background-color-test:  rgb(241, 169, 169);
   --font-color: black;
   --box-shadow: 0 5px 10px rgba(0,0,0,.7);
   --box-shadow-light: 0 5px 10px #23515b;
@@ -18,7 +18,7 @@ body {
 
 }
 section{
-  background-color: var(--section-background-color-test);
+  background-color: var(--section-background-color);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
