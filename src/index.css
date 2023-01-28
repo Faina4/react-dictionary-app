@@ -1,6 +1,7 @@
 :root{
   --background-color:#F4FFE8;
   --section-background-color:  #E5FFEC;
+  --section-background-color-test:  red;
   --font-color: black;
   --box-shadow: 0 5px 10px rgba(0,0,0,.7);
   --box-shadow-light: 0 5px 10px #23515b;
@@ -16,7 +17,9 @@ body {
   font-family: sans-serif;
 
 }
-
+section{
+  background-color: var(--section-background-color-test);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

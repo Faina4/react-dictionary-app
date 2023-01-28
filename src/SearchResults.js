@@ -5,14 +5,17 @@ export default function SearchResults(props){
 
    console.log(props.results)
     if(props.results){
-         return  <div className="SearchResults">
-            <h2>
+         return <div className="SearchResults">
+          <section>
+          <h2>
               <string>{props.results.word}  {""}
-           <small className="fs-6">{props.results.phonetic} 
+       <small className="fs-6">{props.results.phonetic} 
             </small>   
               </string>  
             </h2>
-            <p>
+          </section>
+           
+           <p>
                   {props.results.meanings.map(function(meaning,index){
                 return(
                     <div key={index}>
@@ -21,6 +24,7 @@ export default function SearchResults(props){
          )
             })}
             </p>
+          
           
              </div>
         }else{

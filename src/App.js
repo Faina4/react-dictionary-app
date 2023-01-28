@@ -11,9 +11,9 @@ import Dictionary from'./Dictionary';
       <header className="App-header">   
       < img src=  {SheCodesLogo} className="App-logo img-fluid" alt="logo" /> 
       </header>
-   <Dictionary />
 
-    </div>
+         <Dictionary />  
+         </div>
 
          <footer >
       <small>  Coded by FaIna and open-sourced on <a href="https://github.com/Faina4/react-dictionary-app" rel="noreferrer " target="_blank" >GitHub </a> 

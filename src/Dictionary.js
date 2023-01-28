@@ -31,13 +31,21 @@ function handleKeywordChange(event){
 setKeyword(event.target.value)
 }
     return (
-        <div className="Dictionary">
-            <form onSubmit={search} className="SearchForm col-6 d-inline-flex">
-            <input type="search" onChange={handleKeywordChange} className="SearchInput form-control search-input" />
-              </form>
-              <SearchResults results={searchResults} />
-
-            
+       
+            <div className="Dictionary">
+                <section>
+                  <form onSubmit={search} className="SearchForm col-6 d-inline-flex">
+            <input type="search" placeholder="Search for a word"  onChange={handleKeywordChange} className="SearchInput form-control search-input"  />
+              </form>     
+                </section>
+         
+      
+               <SearchResults results={searchResults} />    
+      
+           
         </div>
+      
+      
+      
     )
 }

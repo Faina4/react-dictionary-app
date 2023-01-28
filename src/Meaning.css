@@ -1,0 +1,7 @@
+.Meaning{
+    background-color: var(--section-background-color-test);
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 100%;
+}
