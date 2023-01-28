@@ -1,3 +1,4 @@
+
 .App {
   margin: 0 auto;
   padding: 15px;
@@ -9,7 +10,7 @@
   .dictionary-app{
  margin: 10px 15px 1px;
  padding: 10px;
-     background-color: #E5FFEC;
+ background-color: var(--section-background-color);
   border-radius: 15px;
   }
  footer{
