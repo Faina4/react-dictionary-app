@@ -12,7 +12,7 @@ import Dictionary from'./Dictionary';
       < img src=  {SheCodesLogo} className="App-logo img-fluid" alt="logo" /> 
       </header>
   <main>
-      <Dictionary defaultKeyword="sunset"/>
+      <Dictionary defaultKeyword="hello"/>
    </main>        
          </div>
 
