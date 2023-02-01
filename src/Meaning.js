@@ -9,14 +9,10 @@ return(
 
      <h4 className="part-of-speech">
      <em>  {props.meaning.partOfSpeech} </em> 
-    </h4>
- 
-   
+    </h4>  
         {props.meaning.definitions.map(function(definition, index)
         {
-        return(
-          
-
+        return(       
                   
 <div key={index} className="definition">
 <p>

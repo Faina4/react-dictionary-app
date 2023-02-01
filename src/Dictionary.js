@@ -7,10 +7,10 @@ import SearchResults from "./SearchResults"
 //<SearchResults results={SearchResults} /> ===
 //===<Component-Name Property-Name={property-value}
 
-export default function Dictionary(){
-let[keyword, setKeyword]=useState("");
+export default function Dictionary(props){
+let[keyword, setKeyword]=useState(props.defaultKeyword);
 let [searchResults, setSearchResults]=useState(null)
-
+console.log(props.defaultKeyword)
 
 function handleResponse(response){
 setSearchResults(response.data[0]);
@@ -35,10 +35,9 @@ setKeyword(event.target.value)
             <div className="Dictionary">
                 <section>
                   <form onSubmit={search} className="SearchForm col-6 d-inline-flex align-middle  ">
-            <input type="search" placeholder="Search for a word"  onChange={handleKeywordChange} className="SearchInput form-control search-input  border-3  "  />
+            <input type="search" placeholder="Search for a word"  onChange={handleKeywordChange} className="SearchInput form-control search-input border-3" />
               </form>     
-                </section>
-         
+                </section>         
       
                <SearchResults results={searchResults} />    
       
