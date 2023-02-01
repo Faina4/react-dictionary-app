@@ -11,9 +11,9 @@ import Dictionary from'./Dictionary';
       <header className="App-header">   
       < img src=  {SheCodesLogo} className="App-logo img-fluid" alt="logo" /> 
       </header>
-
-         <Dictionary defaultKeyword="sunset"/>
-         
+  <main>
+      <Dictionary defaultKeyword="sunset"/>
+   </main>        
          </div>
 
          <footer >
