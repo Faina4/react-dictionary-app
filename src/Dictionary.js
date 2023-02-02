@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./Dictionary.css"
 import axios from "axios";
 import SearchResults from "./SearchResults"
+import { useEffect } from 'react';
 
 //https://dictionaryapi.dev/
 //<SearchResults results={SearchResults} /> ===
@@ -31,9 +32,10 @@ function handleKeywordChange(event){
 setKeyword(event.target.value)
 }
 
-//function load(){
-  //setLoaded(true);
-  //search();}
+useEffect(()=>{
+  
+  search({preventDefault: function(){}})
+},[])
 
 
   return (
