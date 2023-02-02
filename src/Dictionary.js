@@ -34,9 +34,11 @@ setKeyword(event.target.value)
 
 useEffect(()=>{
   
-  search({preventDefault: function(){}})
+  newFunction();
 },[])
-
+function newFunction() {
+  search({ preventDefault: function () { } });
+}
 
   return (
        
@@ -53,5 +55,7 @@ useEffect(()=>{
                    
      </div>  
        );
+
+ 
       }
   
