@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./Dictionary.css"
 import axios from "axios";
 import SearchResults from "./SearchResults"
-import { useEffect } from 'react';
+
 
 //https://dictionaryapi.dev/
 //<SearchResults results={SearchResults} /> ===
@@ -32,9 +32,10 @@ function handleKeywordChange(event){
 setKeyword(event.target.value)
 }
 
+
 useEffect(()=>{
-  
-  newFunction();
+    newFunction();  
+     // eslint-disable-next-line 
 },[])
 function newFunction() {
   search({ preventDefault: function () { } });
@@ -56,6 +57,5 @@ function newFunction() {
      </div>  
        );
 
- 
       }
   
