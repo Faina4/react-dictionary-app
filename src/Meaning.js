@@ -3,8 +3,8 @@ import "./Meaning.css"
 import Synonyms from "./Synonyms"
 
 export default function Meaning(props){
-console.log(props.meaning.definitions)
-//  <strong>Synonyms:</strong> {definition.synonyms}
+console.log(props.meaning.synonyms)
+
 return( 
 <div className="Meaning">
     <h5 className="part-of-speech">
@@ -20,12 +20,13 @@ return(
     <br />
   <strong>Example:</strong>  <em>  {definition.example} </em> 
    <br />
-    <Synonyms synonyms={definition.synonyms} />
-     </p>
+       </p>
  
        </div> ) 
   })}
-
+ <p className="definition">
+ <Synonyms wordSynonyms={props.meaning.synonyms} />
+ </p>
 </div> 
 )
 }
