@@ -1,0 +1,17 @@
+.Synonyms li{
+list-style: none;
+padding: 0 ;
+margin: 0 auto;
+
+
+}
+.Synonyms {
+margin: 0 auto;
+
+padding: 1px;
+}
+.Synonyms .synonym-list{
+    margin: 0 auto;
+    line-height: 25px;
+    padding: 0;
+}

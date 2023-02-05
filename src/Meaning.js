@@ -12,6 +12,7 @@ return(
      <h5 className="part-of-speech">
      <em>  {props.meaning.partOfSpeech} </em> 
     </h5>  
+    
         {props.meaning.definitions.map(function(definition, index)
         {
         return(       
