@@ -6,11 +6,11 @@ margin: 0 auto;
 
 }
 .Synonyms {
-margin: 0 auto;
-
-padding: 1px;
+  
+ margin: 0 auto;
+ 
 }
-.Synonyms .synonym-list{
+ .synonym-list{
     margin: 0 auto;
     line-height: 25px;
     padding: 0;
