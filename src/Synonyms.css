@@ -5,13 +5,9 @@ margin: 0 auto;
 
 
 }
-.Synonyms {
-  
+ul  {
  margin: 0 auto;
+ padding: 0;
  
-}
- .synonym-list{
-    margin: 0 auto;
-    line-height: 25px;
-    padding: 0;
+ 
 }
