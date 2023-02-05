@@ -12,7 +12,7 @@ export default function Dictionary(props){
 let[keyword, setKeyword]=useState(props.defaultKeyword);
 let [searchResults, setSearchResults]=useState(null);
 //let [loaded, setLoaded]=useState(false);
-console.log(props.defaultKeyword)
+//console.log(props.defaultKeyword)
 
 function handleResponse(response){
 setSearchResults(response.data[0]);
@@ -31,15 +31,10 @@ function handleKeywordChange(event){
 //console.log(event.target.value);
 setKeyword(event.target.value)
 }
-
-
 useEffect(()=>{
-    newFunction();  
-     // eslint-disable-next-line 
+   search({preventDefault: function(){}})
+    // eslint-disable-next-line react-hooks/exhaustive-deps
 },[])
-function newFunction() {
-  search({ preventDefault: function () { } });
-}
 
   return (
        

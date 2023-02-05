@@ -4,7 +4,7 @@ import "./SearchResults.css"
 
 export default function SearchResults(props){
 
-   console.log(props.results)
+  // console.log(props.results)
     if(props.results){
          return <div className="SearchResults">
           <section>
@@ -17,7 +17,7 @@ export default function SearchResults(props){
       {props.results.meanings.map(function(meaning,index){
                 return(
      <div key={index}>
-<Meaning meaning={meaning} />
+    <Meaning meaning={meaning} />
       </div>
          )
             })}
