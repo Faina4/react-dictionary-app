@@ -3,7 +3,7 @@ import "./Meaning.css"
 import Synonyms from "./Synonyms"
 
 export default function Meaning(props){
-console.log(props.meaning.synonyms)
+//console.log(props.meaning.synonyms)
 //  <Synonyms wordSynonyms={props.meaning.synonyms} />
 // 
 return( 
