@@ -6,5 +6,8 @@
 .SearchResults .phonetics{
     font-size: 15px;
     font-weight: 200px;
-   
 }
+.SearchResults h2{
+color: red
+
+}   

@@ -40,12 +40,16 @@ useEffect(()=>{
        
     <div className="Dictionary">
        <section>
-         <form onSubmit={search} className="SearchForm col-6 d-inline-flex align-middle  ">
+         <form onSubmit={search} className="SearchForm
+         ">
          <input type="search" placeholder="Search for a word"  
                 onChange={handleKeywordChange} 
-               className="SearchInput form-control search-input border-3"  
+               //className="SearchInput form-control search-input border-3"  
                defaultValue={props.defaultKeyword} />
          </form>     
+         <div className="hint">
+search for a word: hello, yoga, coffee, yoghurt ...
+         </div>
         </section>         
           <SearchResults results={searchResults} />    
                    
