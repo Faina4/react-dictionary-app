@@ -4,27 +4,28 @@ import axios from "axios";
 import SearchResults from "./SearchResults"
 
 
-//https://dictionaryapi.dev/
-//<SearchResults results={SearchResults} /> ===
-//===<Component-Name Property-Name={property-value}
+
 
 export default function Dictionary(props){
-let[keyword, setKeyword]=useState("book");
+let[keyword, setKeyword]=useState(props.defaultKeyword);
 let [searchResults, setSearchResults]=useState(null);
 let [loaded, setLoaded]=useState(false);
-//console.log(props.defaultKeyword)
+
 
 function handleResponse(response){
 setSearchResults(response.data[0]);
 //console.log(response.data[0].meanings[0].definitions[0].definition)
 }
 
-function search(event){
-  //deleted (event)
-//event.preventDefault();
+function search(){
 let apiUrl =`https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`
 axios.get(apiUrl).then(handleResponse);
-//console.log(apiUrl)
+}
+
+function handleSubmit(event){
+event.preventDefault();
+search();
+
 }
 
 function handleKeywordChange(event){
@@ -40,7 +41,7 @@ if (loaded){
        
     <div className="Dictionary">
        <section>
-         <form onSubmit={search} className="SearchForm
+         <form onSubmit={handleSubmit} className="SearchForm
          ">
          <input type="search" placeholder="Search for a word"  
                 onChange={handleKeywordChange} 
