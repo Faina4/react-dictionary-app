@@ -8,35 +8,38 @@ export default function SearchResults(props){
  //console.log(props.results.phonetics)
     if(props.results){
          return (
-         <div className="SearchResults">
+  <div className="SearchResults">
           <section>
-   <h2> <string>{props.results.word}  {""}
-   
-          </string>  
-          <string className="phonetics">
+   <h2> {props.results.word}  {""}
+             </h2>
+    <div className="phonetics">
       {props.results.phonetics.map(function(phonetic,index){
         return(
      <string key={index}>
       
      <Phonetics phonetic={phonetic} />
 
-     </string>     
+     </string>  
+     
         )
       }
       )} 
-    </string>           
-   </h2>
-    
-          </section>
-    <p>
-      {props.results.meanings.map(function(meaning,index){
+    </div>    
+          
+  
+  </section>
+    <div>
+      <section>
+    {props.results.meanings.map(function(meaning,index){
                 return(
      <div key={index}>
     <Meaning meaning={meaning} />
       </div>
          )
-            })}
-  </p>
+            })}      
+      </section>
+    
+  </div>
           
           
              </div>)

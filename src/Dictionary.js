@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import "./Dictionary.css"
 import axios from "axios";
 import SearchResults from "./SearchResults"
@@ -9,9 +9,9 @@ import SearchResults from "./SearchResults"
 //===<Component-Name Property-Name={property-value}
 
 export default function Dictionary(props){
-let[keyword, setKeyword]=useState(props.defaultKeyword);
+let[keyword, setKeyword]=useState("book");
 let [searchResults, setSearchResults]=useState(null);
-//let [loaded, setLoaded]=useState(false);
+let [loaded, setLoaded]=useState(false);
 //console.log(props.defaultKeyword)
 
 function handleResponse(response){
@@ -21,22 +21,22 @@ setSearchResults(response.data[0]);
 
 function search(event){
   //deleted (event)
-event.preventDefault();
+//event.preventDefault();
 let apiUrl =`https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`
 axios.get(apiUrl).then(handleResponse);
 //console.log(apiUrl)
 }
 
 function handleKeywordChange(event){
-//console.log(event.target.value);
 setKeyword(event.target.value)
 }
-useEffect(()=>{
-   search({preventDefault: function(){}})
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-},[])
 
-  return (
+function load(){
+setLoaded(true); 
+search();
+}
+if (loaded){
+   return (
        
     <div className="Dictionary">
        <section>
@@ -55,6 +55,9 @@ search for a word: hello, yoga, coffee, yoghurt ...
                    
      </div>  
        );
-
+}else{
+  load();
+  return"Loading";
+}
       }
   
