@@ -1,24 +1,12 @@
-.Meaning{
-    background-color: var(--section-background-color-test);
-    box-shadow: var( --box-shadow-light);
-   margin: 12px 0;
-    border-radius: 10px;
-    max-width: 100%;
 
-}
-.Meaning p{
-    padding: 0 15px;
-}
 
-.Meaning section {
-    margin: 7px 5px;
-    padding:15px  20px;
-   
-}
- .definition {
-    padding: 7px 15px;
-}
-.part-of-speech{
+.Meaning .part-of-speech{
     margin: 0 auto;
-    padding: 25px 45px 5px;
+    padding: 15px 15px 15px;
+}
+
+.Meaning .example{
+    font-style: italic;
+    color:#6699CC;
+ 
 }

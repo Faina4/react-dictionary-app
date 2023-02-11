@@ -4,11 +4,11 @@ import "./Phonetics.css"
 export default function Phonetics(props){
    // console.log(props.phonetic)
     return(
-        <div className="Phonetics">
+        <string className="Phonetics">
           <a href={props.phonetic.audio} target="_blank" rel="noreferrer"> Listen </a>   
       {""} {""}
-          <string className="Phonetics">{props.phonetic.text}</string>     
-        </div>)
+          <span className="text">{props.phonetic.text}</span>     
+        </string>)
   
      
 }

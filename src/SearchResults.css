@@ -1,10 +1,18 @@
-.SearchResults section {
-  
-    margin: 0 auto;
-    padding: 25px 45px 5px;
-}
-.SearchResults .phonetics{
+
+.SearchResults  .phonetics{
     font-size: 15px;
-    font-weight: 200px;
-   
+  
+    color:   #CC33CC;
+    margin: 5px 1px;
+    padding: 5px;
+    line-height: 55px;
+    display: inline-block;
 }
+.SearchResults h2{
+color:  #CC33CC;
+text-shadow: 3px 1px 3px #123726;
+margin: 0 auto;
+padding: 15px 15px 15px;
+display: inline;
+}   
+
