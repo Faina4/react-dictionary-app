@@ -1,9 +1,17 @@
 
 .Dictionary{
      display: block;
-     margin: 0 auto;
+     margin: 0 auto;   
+}
 
-    
+.Dictionary h1{
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #123726;
+    text-shadow: 3px 1px 3px rgba(238, 238, 56, 0.549);
+
+
 }
 .SearchForm{
     line-height: 45px;

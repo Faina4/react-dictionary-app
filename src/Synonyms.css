@@ -1,11 +1,18 @@
-.Synonyms li{
+.Synonyms{
+    margin: 0 auto;
+padding: 0;
+}
 
+.Synonyms li{
+display: inline-block;
 padding: 0 ;
-margin: 0 auto;
+margin: 5px 7px;
+color: #123726;
+text-shadow: 3px 1px 3px rgb(238, 238, 56);
 
 
 }
- ul  {
+ .Synonyms ul  {
  margin: 0 auto;
  padding: 0;
  list-style-type: none;

@@ -12,6 +12,7 @@ export default function SearchResults(props){
           <section>
    <h2> {props.results.word}  {""}
              </h2>
+             <br />
     <div className="phonetics">
       {props.results.phonetics.map(function(phonetic,index){
         return(

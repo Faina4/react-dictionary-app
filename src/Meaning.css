@@ -4,3 +4,9 @@
     margin: 0 auto;
     padding: 15px 15px 15px;
 }
+
+.Meaning .example{
+    font-style: italic;
+    color:#6699CC;
+ 
+}

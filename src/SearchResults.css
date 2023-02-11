@@ -1,12 +1,12 @@
 
- .phonetics{
+.SearchResults  .phonetics{
     font-size: 15px;
   
     color:   #CC33CC;
     margin: 5px 1px;
     padding: 5px;
-    line-height: 200%;
-    display: inline;
+    line-height: 55px;
+    display: inline-block;
 }
 .SearchResults h2{
 color:  #CC33CC;

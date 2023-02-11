@@ -41,11 +41,11 @@ if (loaded){
        
     <div className="Dictionary">
        <section>
+        <h1>What word do you want to look up?</h1>
          <form onSubmit={handleSubmit} className="SearchForm
          ">
          <input type="search" placeholder="Search for a word"  
                 onChange={handleKeywordChange} 
-               //className="SearchInput form-control search-input border-3"  
                defaultValue={props.defaultKeyword} />
          </form>     
          <div className="hint">
