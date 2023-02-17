@@ -16,11 +16,11 @@ export default function SearchResults(props){
     <div className="phonetics">
       {props.results.phonetics.map(function(phonetic,index){
         return(
-     <string key={index}>
+     <span key={index}>
       
      <Phonetics phonetic={phonetic} />
 
-     </string>  
+     </span>  
      
         )
       }
