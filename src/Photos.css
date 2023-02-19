@@ -1,0 +1,7 @@
+.Photos img{
+ border-radius: 10px;
+margin: 25px 1px 15px;
+ vertical-align: middle;  
+ box-shadow: var( --box-shadow-light);
+}
+
