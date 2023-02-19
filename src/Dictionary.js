@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./Dictionary.css"
 import axios from "axios";
 import SearchResults from "./SearchResults"
+import Photos from "./Photos"
 //2qqBLwj0friDOXm4nmyz6BM6K3A7giUrXuniwhbJtvLZVwN03R0mxFG2
 
 
@@ -10,6 +11,7 @@ export default function Dictionary(props){
 let[keyword, setKeyword]=useState(props.defaultKeyword);
 let [searchResults, setSearchResults]=useState(null);
 let [loaded, setLoaded]=useState(false);
+let [photos, setPhotos]=useState(null);
 
 
 function handleDictionaryResponse(response){
@@ -17,7 +19,8 @@ setSearchResults(response.data[0]);
 //console.log(response.data[0].meanings[0].definitions[0].definition)
 }
 function handlePexelsResponse(response){
-  console.log(response)
+  //console.log(response.data)
+  setPhotos(response.data.photos)
 }
 
 function search(){
@@ -61,6 +64,7 @@ search for a word: hello, yoga, coffee, yoghurt ...
          </div>
         </section>         
           <SearchResults results={searchResults} />    
+          <Photos photos={photos} />    
                    
      </div>  
        );
