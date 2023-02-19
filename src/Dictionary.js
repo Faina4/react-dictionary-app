@@ -19,7 +19,6 @@ setSearchResults(response.data[0]);
 //console.log(response.data[0].meanings[0].definitions[0].definition)
 }
 function handlePexelsResponse(response){
-  //console.log(response.data)
   setPhotos(response.data.photos)
 }
 
