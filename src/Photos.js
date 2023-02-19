@@ -1,4 +1,5 @@
 import React from "react";
+import "./Photos.css"
 
 export default function Photos(props){
   //  console.log(props.photos)
@@ -6,12 +7,16 @@ export default function Photos(props){
     if(props.photos){
       return (
     <section className="Photos">
-        {props.photos.map(function(photo, index){
+      <div className="row">
+      {props.photos.map(function(photo, index){
              return(
-                <img key={index}src={photo.src.landscape} /> 
+              <div className="col-4" key={index}>
+                  <img src={photo.src.landscape} className="img-fluid" /> 
+              </div>
              )
            
         } )}
+      </div>
    </section>)
     }  else{
     return null;
