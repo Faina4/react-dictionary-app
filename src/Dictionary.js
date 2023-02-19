@@ -27,7 +27,7 @@ let apiUrl =`https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`
 axios.get(apiUrl).then(handleDictionaryResponse);
 
 const pexelsApiKey="2qqBLwj0friDOXm4nmyz6BM6K3A7giUrXuniwhbJtvLZVwN03R0mxFG2"
-let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`
+let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`
 let headers= {Authorization:`Bearer ${pexelsApiKey}`}
 axios.get(pexelsApiUrl,{headers: headers} ).then(handlePexelsResponse);
 }
